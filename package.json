@@ -6,10 +6,12 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server  --config webpack.config.js --open",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://Lucascoorek.github.io/clock_app",
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
@@ -29,7 +31,8 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.3"
+    "@babel/polyfill": "^7.4.3",
+    "gh-pages": "^2.0.1"
   },
   "browserslist": [
     "> 1%",
